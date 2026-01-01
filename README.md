@@ -1,139 +1,150 @@
-# ? Python ��������һ�����ù���
+# 🐍 Python 开发环境一键配置工具
 
-һ��רΪ Python ��������Ƶ�������������װ���ߡ�֧�ֶ��ֹ��ھ���Դ��һ����װ���ÿ�ѧ���㡢GUI����Ϸ������ȫ����������
+一款专为 Python 开发者设计的依赖包批量安装工具。支持多种国内镜像源，一键安装常用科学计算、GUI、游戏开发等全套依赖包。
 
-## ? ��Ҫ����
+## ✨ 主要功能
 
-### ? ����������
-- һ����װ25+����Python��
-- �Զ�����pip�����°汾
-- ���ܴ���������ϵ
-- �汾�ž�ȷ����
+### 📦 依赖包管理
 
-### ? ����Դѡ��
-- **�ٷ� PyPI**: ȫ���׼Դ
-- **�廪 TUNA**: ���ڸ��پ���
-- **������**: �ȶ��ɿ��Ĺ���Դ
-- **��Ϊ��**: ��ҵ���������
-- **�й��ƴ� USTC**: ��������ѡ
+- 一键安装25+常用Python库
+- 自动升级pip到最新版本
+- 智能处理依赖关系
+- 版本号精确控制
 
-### ?? �����ݴ�
-- �Զ����Ի��ƣ�pygame�ر��Ż���
-- ��ʱ�Զ��л��ٷ�Դ
-- �����Ѻ���ʾ
-- ��ϸ��װ��־
+### 🌐 镜像源选择
 
-### ? �������б�
+- **官方 PyPI**: 全球标准源
+- **清华 TUNA**: 国内高速镜像
+- **阿里云**: 稳定可靠的国内源
+- **华为云**: 企业级镜像服务
+- **中国科大 USTC**: 教育网优选
 
-#### ���ݿ�ѧ����ӻ�
-- **numpy** (2.3.3) - ��ѧ������Ŀ�
-- **pandas** (2.3.3) - ���ݷ�������
-- **matplotlib** (3.10.7) - ��ͼ��
-- **contourpy** (1.3.3) - �ȸ��߻���
-- **openpyxl** (3.1.5) - Excel����
+### 🛡️ 智能容错
 
-#### GUI����
-- **PyQt5** (5.15.11) - ��ƽ̨������
-- **PyQt5-Qt5** (5.15.2) - Qt�������
-- **PyQt5_sip** (12.17.1) - Python/C++��
+- 自动重试机制（pygame特别优化）
+- 超时自动切换官方源
+- 错误友好提示
+- 详细安装日志
 
-#### ��Ϸ����
-- **pygame** (2.6.1) - ��Ϸ�������
+### 📊 包含库列表
 
-#### �������
-- **pyinstaller** (6.16.0) - ����������
-- **pyinstaller-hooks-contrib** (2025.9) - ������
-- **pefile** (2023.2.7) - PE�ļ�����
+#### 数据科学与可视化
 
-#### Ӳ������
-- **pyserial** (3.5) - ����ͨ��
+- **numpy** (2.3.3) - 科学计算核心库
+- **pandas** (2.3.3) - 数据分析工具
+- **matplotlib** (3.10.7) - 绘图库
+- **contourpy** (1.3.3) - 等高线绘制
+- **openpyxl** (3.1.5) - Excel操作
 
-#### �ı�����
-- **Markdown** (3.10) - Markdown��Ⱦ
+#### GUI开发
 
-#### ��������
-- **pillow** (12.0.0) - ͼ����
-- **fonttools** (4.60.1) - ���幤��
-- **kiwisolver** (1.4.9) - Լ�������
-- **cycler** (0.12.1) - ��ʽѭ����
-- **pyparsing** (3.2.5) - ������
-- **packaging** (25.0) - �汾����
-- **python-dateutil** (2.9.0.post0) - ���ڴ���
-- **pytz** (2025.2) - ʱ��֧��
-- **tzdata** (2025.2) - ʱ������
+- **PyQt5** (5.15.11) - 跨平台界面框架
+- **PyQt5-Qt5** (5.15.2) - Qt核心组件
+- **PyQt5_sip** (12.17.1) - Python/C++绑定
+
+#### 游戏开发
+
+- **pygame** (2.6.1) - 游戏开发框架
+
+#### 打包工具
+
+- **pyinstaller** (6.16.0) - 程序打包工具
+- **pyinstaller-hooks-contrib** (2025.9) - 打包插件
+- **pefile** (2023.2.7) - PE文件解析
+
+#### 硬件交互
+
+- **pyserial** (3.5) - 串口通信
+
+#### 文本处理
+
+- **Markdown** (3.10) - Markdown渲染
+
+#### 其他依赖
+
+- **pillow** (12.0.0) - 图像处理
+- **fonttools** (4.60.1) - 字体工具
+- **kiwisolver** (1.4.9) - 约束求解器
+- **cycler** (0.12.1) - 样式循环器
+- **pyparsing** (3.2.5) - 解析器
+- **packaging** (25.0) - 版本管理
+- **python-dateutil** (2.9.0.post0) - 日期处理
+- **pytz** (2025.2) - 时区支持
+- **tzdata** (2025.2) - 时区数据
 - **pywin32-ctypes** (0.2.3) - Windows API
-- **setuptools** (80.9.0) - �������
-- **six** (1.17.0) - �����Կ�
-- **altgraph** (0.17.4) - ͼ�㷨
-- **et_xmlfile** (2.0.0) - Excel XML����
+- **setuptools** (80.9.0) - 打包工具
+- **six** (1.17.0) - 兼容性库
+- **altgraph** (0.17.4) - 图算法
+- **et_xmlfile** (2.0.0) - Excel XML处理
 
-## ? ���ٿ�ʼ
+## 🚀 快速开始
 
-### ʹ�÷���
+### 使用方法
 
-#### ��ʽ1��˫������
-ֱ��˫�� `on_python.bat` �ļ���������ʾѡ����Դ��
+#### 方式1：双击运行
 
-#### ��ʽ2������������
+直接双击 `on_python.bat` 文件，根据提示选择镜像源。
+
+#### 方式2：命令行运行
 
 ```cmd
-cd e:\OneDrive\����\on_python
+cd e:\OneDrive\桌面\on_python
 on_python.bat
 ```
 
-### ��װ����
+### 安装步骤
 
-1. **ѡ����Դ**
+1. **选择镜像源**
+
    ```
-   ��ѡ��Ҫʹ�õ� pip Դ:
-     1) �ٷ� PyPI (https://pypi.org/simple)
-     2) �廪 TUNA (https://pypi.tuna.tsinghua.edu.cn/simple)
-     3) ������ (https://mirrors.aliyun.com/pypi/simple)
-     4) ��Ϊ�� (https://mirrors.huaweicloud.com/repository/pypi/simple)
-     5) �й��ƴ� USTC (https://mirrors.ustc.edu.cn/pypi/web/simple)
-   
-   ����������ѡ��Դ [1-5]:
+   请选择要使用的 pip 源:
+     1) 官方 PyPI (https://pypi.org/simple)
+     2) 清华 TUNA (https://pypi.tuna.tsinghua.edu.cn/simple)
+     3) 阿里云 (https://mirrors.aliyun.com/pypi/simple)
+     4) 华为云 (https://mirrors.huaweicloud.com/repository/pypi/simple)
+     5) 中国科大 USTC (https://mirrors.ustc.edu.cn/pypi/web/simple)
+
+   请输入数字选择源 [1-5]:
+   ```
+2. **输入数字** (1-5) 选择镜像源
+3. **等待安装**
+
+   - 脚本会自动安装所有依赖
+   - pygame安装时间较长，请耐心等待
+   - 如果pygame安装失败，会自动切换官方源重试
+4. **安装完成**
+
+   ```
+   所有指定包的安装命令已执行完毕。
+   请按任意键继续. . .
    ```
 
-2. **��������** (1-5) ѡ����Դ
+## 💡 使用场景
 
-3. **�ȴ���װ**
-   - �ű����Զ���װ��������
-   - pygame��װʱ��ϳ��������ĵȴ�
-   - ���pygame��װʧ�ܣ����Զ��л��ٷ�Դ����
+### 1. 新环境快速配置
 
-4. **��װ���**
-   ```
-   ����ָ�����İ�װ������ִ����ϡ�
-   �밴���������. . .
-   ```
-
-## ? ʹ�ó���
-
-### 1. �»�����������
-
-�հ�װPython��һ���������г��ÿ⣺
+刚安装Python后，一键配置所有常用库：
 
 ```cmd
-# ��װPython 3.12��
+# 安装Python 3.12后
 on_python.bat
-# ѡ����Դ�������Ƽ�2-5��
-# �ȴ���װ���
+# 选择镜像源（国内推荐2-5）
+# 等待安装完成
 ```
 
-### 2. ���ݿ�ѧ����
+### 2. 数据科学环境
 
-�������ݷ����Ϳ��ӻ�������
+配置数据分析和可视化环境：
 
 ```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# ��������
+# 创建数据
 data = pd.DataFrame(np.random.randn(100, 2), columns=['A', 'B'])
 
-# ��ͼ
+# 绘图
 plt.figure(figsize=(10, 6))
 plt.plot(data['A'], label='Series A')
 plt.plot(data['B'], label='Series B')
@@ -141,9 +152,9 @@ plt.legend()
 plt.show()
 ```
 
-### 3. GUIӦ�ÿ���
+### 3. GUI应用开发
 
-ʹ��PyQt5��������Ӧ�ã�
+使用PyQt5开发桌面应用：
 
 ```python
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
@@ -161,9 +172,9 @@ window.show()
 sys.exit(app.exec_())
 ```
 
-### 4. ��Ϸ����
+### 4. 游戏开发
 
-ʹ��pygame������Ϸ��
+使用pygame开发游戏：
 
 ```python
 import pygame
@@ -177,325 +188,336 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    
+  
     screen.fill((255, 255, 255))
     pygame.display.flip()
 
 pygame.quit()
 ```
 
-### 5. ������
+### 5. 程序打包
 
-ʹ��pyinstaller���Ϊ��ִ���ļ���
+使用pyinstaller打包为可执行文件：
 
 ```cmd
 pyinstaller --onefile --windowed my_app.py
 ```
 
-## ? ��ɫ����
+## 🎯 特色功能
 
-### �����ݴ�����
+### 智能容错机制
 
 ```batch
-echo ���ڰ�װ pygame==2.6.1 (����ʱ��ϳ�)...
+echo 正在安装 pygame==2.6.1 (可能时间较长)...
 python -m pip install pygame==2.6.1 -i %PIP_INDEX_URL% --default-timeout=600
 if errorlevel 1 (
-    echo �� %PIP_INDEX_URL% ��װ pygame ʧ�ܣ����Թٷ�Դ...
+    echo 从 %PIP_INDEX_URL% 安装 pygame 失败，尝试官方源...
     py -3.12 -m pip install pygame==2.6.1 -i https://pypi.org/simple --default-timeout=600
 )
 ```
 
-- pygame��װ��ʱʱ���ӳ���600��
-- ��װʧ���Զ��л��ٷ�Դ
-- ��֤�ؼ��ⰲװ�ɹ�
+- pygame安装超时时间延长至600秒
+- 安装失败自动切换官方源
+- 保证关键库安装成功
 
-### ����֧��
+### 中文支持
 
 ```batch
 @echo off
 chcp 65001 >nul
 ```
 
-- ����UTF-8����
-- ����֧��������ʾ
-- ������������
+- 设置UTF-8编码
+- 完美支持中文显示
+- 避免乱码问题
 
-### �汾����
+### 版本锁定
 
-������������ָ���˾�ȷ�汾�ţ�ȷ����
-- ? �����ɸ���
-- ? ����汾��ͻ
-- ? �ȶ��Ա�֤
+所有依赖包都指定了精确版本号，确保：
 
-## ?? ϵͳҪ��
+- ✅ 环境可复现
+- ✅ 避免版本冲突
+- ✅ 稳定性保证
 
-- **����ϵͳ**: Windows 7 ������
-- **Python�汾**: Python 3.8+���Ƽ� 3.12��
-- **���̿ռ�**: ���� 500 MB
-- **����Ҫ��**: �ȶ��Ļ���������
+## 🛠️ 系统要求
 
-### Python��װ���
+- **操作系统**: Windows 7 及以上
+- **Python版本**: Python 3.8+（推荐 3.12）
+- **磁盘空间**: 至少 500 MB
+- **网络要求**: 稳定的互联网连接
+
+### Python安装检查
 
 ```cmd
 python --version
 ```
 
-���δ��װPython�����ȴ�[Python����](https://www.python.org/downloads/)���ذ�װ��
+如果未安装Python，请先从[Python官网](https://www.python.org/downloads/)下载安装。
 
-## ? ����Դ�ٶȶԱ�
+## 📊 镜像源速度对比
 
-| ����Դ | �����ٶ� | �ȶ��� | �Ƽ����� |
-|--------|----------|--------|----------|
-| �ٷ� PyPI | ?? | ????? | �����û� |
-| �廪 TUNA | ????? | ???? | ͨ���Ƽ� |
-| ������ | ???? | ????? | ��ҵ�û� |
-| ��Ϊ�� | ???? | ???? | ��ҵ�û� |
-| �й��ƴ� | ????? | ???? | �������û� |
+| 镜像源    | 国内速度   | 稳定性     | 推荐场景   |
+| --------- | ---------- | ---------- | ---------- |
+| 官方 PyPI | ⭐⭐       | ⭐⭐⭐⭐⭐ | 海外用户   |
+| 清华 TUNA | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐   | 通用推荐   |
+| 阿里云    | ⭐⭐⭐⭐   | ⭐⭐⭐⭐⭐ | 企业用户   |
+| 华为云    | ⭐⭐⭐⭐   | ⭐⭐⭐⭐   | 企业用户   |
+| 中国科大  | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐   | 教育网用户 |
 
-### �Ƽ�ѡ��
+### 推荐选择
 
-- **����������**: ѡ�� 5 (�й��ƴ�)
-- **��ҵ����**: ѡ�� 3 (������) �� 4 (��Ϊ��)
-- **��ͥ����**: ѡ�� 2 (�廪TUNA)
-- **��������**: ѡ�� 1 (�ٷ�PyPI)
+- **教育网环境**: 选择 5 (中国科大)
+- **企业环境**: 选择 3 (阿里云) 或 4 (华为云)
+- **家庭宽带**: 选择 2 (清华TUNA)
+- **海外网络**: 选择 1 (官方PyPI)
 
-## ?? ��������
+## ⚠️ 常见问题
 
-### 1. pygame��װʧ��
+### 1. pygame安装失败
 
-**����**: pygame��װ��ʱ��ʧ��
+**问题**: pygame安装超时或失败
 
-**�������**:
-- �ű����Զ����Թٷ�Դ
-- �ֶ���װ��`python -m pip install pygame==2.6.1 --default-timeout=600`
-- ������������Դ
+**解决方案**:
 
-### 2. Ȩ�޴���
+- 脚本会自动重试官方源
+- 手动安装：`python -m pip install pygame==2.6.1 --default-timeout=600`
+- 尝试其他镜像源
 
-**����**: `Permission denied` �� `Access is denied`
+### 2. 权限错误
 
-**�������**:
+**问题**: `Permission denied` 或 `Access is denied`
+
+**解决方案**:
+
 ```cmd
-# �Թ���Ա��������
-# ��ʹ���û���װ
+# 以管理员身份运行
+# 或使用用户安装
 python -m pip install --user <package>
 ```
 
-### 3. SSL֤�����
+### 3. SSL证书错误
 
-**����**: `SSL: CERTIFICATE_VERIFY_FAILED`
+**问题**: `SSL: CERTIFICATE_VERIFY_FAILED`
 
-**�������**:
+**解决方案**:
+
 ```cmd
-# ��ʱ����֤�飨���Ƽ���
+# 临时信任证书（不推荐）
 python -m pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org <package>
 ```
 
-### 4. ���糬ʱ
+### 4. 网络超时
 
-**����**: `Read timed out`
+**问题**: `Read timed out`
 
-**�������**:
-- �л���������Դ
-- ���ӳ�ʱʱ�䣺`--default-timeout=600`
-- �����������
+**解决方案**:
 
-### 5. �汾��ͻ
+- 切换其他镜像源
+- 增加超时时间：`--default-timeout=600`
+- 检查网络连接
 
-**����**: ��ʾ�汾������
+### 5. 版本冲突
 
-**�������**:
+**问题**: 提示版本不兼容
+
+**解决方案**:
+
 ```cmd
-# ��ж�ؾɰ汾
+# 先卸载旧版本
 python -m pip uninstall <package>
-# �������нű�
+# 重新运行脚本
 ```
 
-## ? ������־
+## 🔄 更新日志
 
 ### v1.0 (20250101)
-- ? ��ʼ�汾����
-- ? ֧��5����Դ
-- ? ����25+����Python��
-- ? pip�Զ�������25.3
-- ? pygame�����ݴ�����
-- ? ��������֧��
-- ? ����ʽ����Դѡ��
 
-## ? �Զ�������
+- ✅ 初始版本发布
+- ✅ 支持5大镜像源
+- ✅ 包含25+常用Python库
+- ✅ pip自动升级到25.3
+- ✅ pygame智能容错机制
+- ✅ 中文完美支持
+- ✅ 交互式镜像源选择
 
-### �޸İ汾��
+## 📦 自定义配置
 
-�༭ `on_python.bat`���ҵ���Ӧ�İ�װ���
+### 修改版本号
+
+编辑 `on_python.bat`，找到对应的安装命令：
 
 ```batch
 python -m pip install numpy==2.3.3 -i %PIP_INDEX_URL%
-# ��Ϊ
-python -m pip install numpy==<�°汾> -i %PIP_INDEX_URL%
+# 改为
+python -m pip install numpy==<新版本> -i %PIP_INDEX_URL%
 ```
 
-### �����°�
+### 添加新包
 
-���ʵ�λ�����ӣ�
+在适当位置添加：
 
 ```batch
 python -m pip install <package_name>==<version> -i %PIP_INDEX_URL%
 ```
 
-### �Ƴ�����Ҫ�İ�
+### 移除不需要的包
 
-ע�͵���ɾ����Ӧ�У�
+注释掉或删除对应行：
 
 ```batch
 REM python -m pip install pygame==2.6.1 -i %PIP_INDEX_URL%
 ```
 
-## ? �ű��ṹ
+## 🎨 脚本结构
 
 ```
 on_python.bat
-������ �������� (UTF-8)
-������ ����Դѡ��˵�
-��   ������ �ٷ� PyPI
-��   ������ �廪 TUNA
-��   ������ ������
-��   ������ ��Ϊ��
-��   ������ �й��ƴ�
-������ pip���� (25.3)
-������ ��������װ
-��   ������ ������
-��   ������ ���ݿ�ѧ��
-��   ������ GUI��
-��   ������ ��Ϸ������
-��   ������ �������
-������ pygame���⴦��
-��   ������ �ӳ���ʱ
-��   ������ ʧ������
-������ �����ʾ
+├── 编码设置 (UTF-8)
+├── 镜像源选择菜单
+│   ├── 官方 PyPI
+│   ├── 清华 TUNA
+│   ├── 阿里云
+│   ├── 华为云
+│   └── 中国科大
+├── pip升级 (25.3)
+├── 依赖包安装
+│   ├── 基础库
+│   ├── 数据科学库
+│   ├── GUI库
+│   ├── 游戏开发库
+│   └── 打包工具
+├── pygame特殊处理
+│   ├── 延长超时
+│   └── 失败重试
+└── 完成提示
 ```
 
-## ? �����ص�
+## 💻 技术特点
 
-- **�������ű�**: Windowsԭ��֧��
-- **����ʽѡ��**: `choice` ����ʵ��
-- **������**: `errorlevel` �ж�
-- **��������**: ��̬���þ���Դ
-- **��ʱ����**: ��Դ��Ͱ��Ż�
+- **批处理脚本**: Windows原生支持
+- **交互式选择**: `choice` 命令实现
+- **错误处理**: `errorlevel` 判断
+- **环境变量**: 动态设置镜像源
+- **超时控制**: 针对大型包优化
 
-## ? ���ʵ��
+## 📝 最佳实践
 
-### 1. ���⻷��ʹ��
+### 1. 虚拟环境使用
 
-�Ƽ������⻷����ʹ�ã�
+推荐在虚拟环境中使用：
 
 ```cmd
-# �������⻷��
+# 创建虚拟环境
 python -m venv myenv
 
-# �������⻷��
+# 激活虚拟环境
 myenv\Scripts\activate
 
-# ���а�װ�ű�
+# 运行安装脚本
 on_python.bat
 
-# �˳����⻷��
+# 退出虚拟环境
 deactivate
 ```
 
-### 2. ���ڸ���
+### 2. 定期更新
 
-���ڼ�����£�
+定期检查库更新：
 
 ```cmd
 python -m pip list --outdated
 ```
 
-### 3. ��������
+### 3. 依赖导出
 
-������ǰ����������
+导出当前环境依赖：
 
 ```cmd
 python -m pip freeze > requirements.txt
 ```
 
-### 4. ��������
+### 4. 清理缓存
 
-����pip�����ͷſռ䣺
+清理pip缓存释放空间：
 
 ```cmd
 python -m pip cache purge
 ```
 
-## ? Ӧ�ó���
+## 🌟 应用场景
 
-### ѧ��ѧϰ
-- ���ݽṹ���㷨ʵ��
-- ����ѧϰ�γ�
-- ��Ϸ�����γ�
-- GUI���ѧϰ
+### 学生学习
 
-### ���ݷ���ʦ
-- ������ϴ�ʹ���
-- ���ӻ���������
-- Excel�Զ���
-- ͳ�Ʒ���
+- 数据结构与算法实践
+- 机器学习课程
+- 游戏开发课程
+- GUI编程学习
 
-### ��������
-- ����Ӧ�ÿ���
-- �Զ����ű�
-- ���߿���
-- ����������
+### 数据分析师
 
-### Ƕ��ʽ����
-- ���ڵ��Թ���
-- ���ݲɼ�����
-- ��λ������
-- Э�����
+- 数据清洗和处理
+- 可视化报告生成
+- Excel自动化
+- 统计分析
 
-## ? ֧�������������ͣ�
+### 软件开发
 
-��������Ŀ�����а�������ӭͨ�����·�ʽ֧�����ߵĳ���ά����Ľ���
+- 桌面应用开发
+- 自动化脚本
+- 工具开发
+- 程序打包发布
 
-* ? **Star ����Ŀ**��������õ�֧�ַ�ʽ��
-* ? **Fork �����빱��**
-* ? ��� Issue / �Ľ�����
-* ? **��Ը���ͣ���ǿ�ƣ�**
+### 嵌入式开发
 
-### ���ͷ�ʽ
+- 串口调试工具
+- 数据采集分析
+- 上位机开发
+- 协议解析
 
-| ƽ̨ | ˵�� |
-|------|------|
-| ΢�� | ɨ���·���ά�� |
+## 💖 支持与赞助（打赏）
 
-> ������ȫ��Ը����Ӱ����Ŀ���κι��ܻ���Ȩ��
+如果这个项目对你有帮助，欢迎通过以下方式支持作者的持续维护与改进：
 
-## ? ����֤
+* ⭐ **Star 本项目**（这是最好的支持方式）
+* 🍴 **Fork 并参与贡献**
+* 💬 提出 Issue / 改进建议
+* ☕ **自愿打赏（非强制）**
 
-����Ŀ���� **MIT License** ��Դ������
-��������ɵ�ʹ�á��޸ĺͷַ�����Ŀ�����豣��ԭʼ��Ȩ������
+### 打赏方式
 
----
+| 平台 | 说明           |
+| ---- | -------------- |
+| 微信 | 扫描下方二维码 |
 
-## ? ����ָ��
+> 打赏完全自愿，不影响项目的任何功能或授权。
 
-��ӭ�ύ **Issue** �� **Pull Request**��
+## 📄 许可证
 
-�������̣�
-
-1. Fork ���ֿ�
-2. �½���֧�����޸�
-3. �ύ PR ����Ҫ˵���޸�����
-
-���ǽϴ�Ķ����������ύ Issue ���ۡ�
+本项目基于 **MIT License** 开源发布。
+你可以自由地使用、修改和分发本项目，但需保留原始版权声明。
 
 ---
 
-## ? ��ϵ��ʽ
+## 🤝 贡献指南
 
-* Email��[1013344248@qq.com](mailto:1013344248@qq.com)
-* GitHub��@dlw830
+欢迎提交 **Issue** 和 **Pull Request**！
+
+建议流程：
+
+1. Fork 本仓库
+2. 新建分支进行修改
+3. 提交 PR 并简要说明修改内容
+
+如是较大改动，建议先提交 Issue 讨论。
 
 ---
 
-**Happy Python Coding!** ?  
-�������������Ŀ�м�ֵ�������˵�� ?
+## 📧 联系方式
+
+* Email：[1013344248@qq.com](mailto:1013344248@qq.com)
+* GitHub：@dlw830
+
+---
+
+**Happy Python Coding!** 🚀
+如果你觉得这个项目有价值，别忘了点个 ⭐
