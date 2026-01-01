@@ -488,6 +488,7 @@ python -m pip cache purge
 | 平台 | 说明           |
 | ---- | -------------- |
 | 微信 | 扫描下方二维码 |
+<img width="1468" height="1446" alt="image" src="https://github.com/user-attachments/assets/1bb0bbcb-16e3-41e4-a889-5ea8332679ad" />
 
 > 打赏完全自愿，不影响项目的任何功能或授权。
 
@@ -521,3 +522,4 @@ python -m pip cache purge
 
 **Happy Python Coding!** 🚀
 如果你觉得这个项目有价值，别忘了点个 ⭐
+
